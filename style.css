@@ -370,7 +370,7 @@ main section.middle .card .top .left {
     font-size: 1.4rem;
 }
 
-main section.middle .card .top .left img{
+main section.middle .card .top .left img {
     width: 2.3rem;
     height: 2.3rem;
     border: 1px solid white;
@@ -378,30 +378,80 @@ main section.middle .card .top .left img{
     padding: 0.4rem;
 }
 
-main section.middle .card .top img.right{
+main section.middle .card .top img.right {
     width: 3.5rem;
 }
 
-main section.middle .card .middle{
+main section.middle .card .middle {
     display: flex;
     justify-content: space-between;
 }
 
-main section.middle .card .middle .chip{
+main section.middle .card .middle .chip {
     width: 4rem;
 }
 
-main section.middle .card .bottom{
+main section.middle .card .bottom {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
 
 /* MONTHLY REPORT */
-main .monthly-report{
+main .monthly-report {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     justify-content: space-between;
     margin-top: 2rem;
+}
+
+/* FAST PAYMENT */
+main .fast-payment {
+    margin-top: 2rem;
+    display: flex;
+    align-self: center;
+    gap: 2rem;
+}
+
+main .fast-payment .badges {
+    display: flex;
+    gap: 1rem;
+    align-self: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+main .fast-payment .badge span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+
+main .fast-payment .badge{
+    padding: 0.5rem var(--card-padding);
+    background: var(--color-white);
+    border-radius: var(--border-radius-2);
+    display: flex;
+    align-self: center;
+    gap: 1rem;
+}
+
+main .fast-payment .badge:first-child:hover{
+    box-shadow: 0 0 1.5rem var(--color-primary-light);
+    cursor: pointer;
+}
+
+main .fast-payment .badge:first-child span{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    height: fit-content;
+    font-size: 1.5rem;
+}
+
+main .fast-payment .badge div{
+    display: flex;
+    gap: 2rem;
+    align-self: center;
 }
