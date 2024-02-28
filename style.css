@@ -338,6 +338,7 @@ main section.middle .cards .card {
     justify-content: space-between;
     box-shadow: 0 2rem 3rem var(--color-danger-light);
     transition: all 200ms ease;
+    min-width: 24rem;
 }
 
 main section.middle .cards .card:hover {
@@ -428,7 +429,7 @@ main .fast-payment .badge span {
     border-radius: 50%;
 }
 
-main .fast-payment .badge{
+main .fast-payment .badge {
     padding: 0.5rem var(--card-padding);
     background: var(--color-white);
     border-radius: var(--border-radius-2);
@@ -437,12 +438,12 @@ main .fast-payment .badge{
     gap: 1rem;
 }
 
-main .fast-payment .badge:first-child:hover{
+main .fast-payment .badge:first-child:hover {
     box-shadow: 0 0 1.5rem var(--color-primary-light);
     cursor: pointer;
 }
 
-main .fast-payment .badge:first-child span{
+main .fast-payment .badge:first-child span {
     display: flex;
     align-self: center;
     justify-content: center;
@@ -450,8 +451,62 @@ main .fast-payment .badge:first-child span{
     font-size: 1.5rem;
 }
 
-main .fast-payment .badge div{
+main .fast-payment .badge div {
     display: flex;
     gap: 2rem;
     align-self: center;
+}
+
+
+/* CANVAS */
+
+canvas#chart {
+    background: var(--color-white);
+    max-width: 100%;
+    margin-top: 2rem;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+}
+
+/* INVESTMENTS */
+
+main section.right .investments {
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+}
+
+main section.right .investments img {
+    width: 2.4rem;
+}
+
+main section.right .investments .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--card-padding);
+    padding-bottom: 0;
+}
+
+main section.right .investments .header a {
+    display: flex;
+    align-items: center;
+    color: var(--color-primary);
+}
+
+main section.right .investments .investment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--card-padding);
+    border-bottom: 1px solid var(--color-light);
+    transition: all 300ms ease;
+}
+
+main section.right .investments .investment:last-child {
+    border: none;
+}
+
+main section.right .investments .investment:hover{
+    background:  var(--color-light);
+    cursor: pointer;
 }
