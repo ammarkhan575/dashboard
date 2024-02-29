@@ -24,6 +24,14 @@
     --border-radius-2: 6px;
 }
 
+/* dark theme variables */
+.dark-theme {
+    --color-white: #131316;
+    --color-light: #23232a;
+    --color-dark: #ddd;
+    --color-dark-gray: #adacb5;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -633,6 +641,12 @@ main .recent-transactions .card-details .card {
         box-shadow: 2rem 0 2rem var(--color-primary-light);
     }
 
+    @keyframes showSidebar {
+        to {
+            left: 0;
+        }
+    }
+
     main aside button#close-btn {
         display: inline-block;
         width: 3rem;
@@ -681,11 +695,11 @@ main .recent-transactions .card-details .card {
         display: none;
     }
 
-    main section.middle .cards{
+    main section.middle .cards {
         grid-template-columns: 1fr;
     }
 
-    main section.middle .fast-payment{
+    main section.middle .fast-payment {
         flex-direction: column;
         align-items: flex-start;
         margin-top: 3rem;
